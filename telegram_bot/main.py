@@ -49,7 +49,6 @@ def main():
     application.add_handler(MessageHandler(filters.Text("Проверить документы"), echo))
     application.add_handler(CommandHandler("start", start))
     application.run_polling()
-    # application.idle()
     
 if __name__ == '__main__':
     main()
